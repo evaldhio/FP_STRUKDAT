@@ -1,1 +1,31 @@
-
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "-std=c++17",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/Book.cpp",
+                "${workspaceFolder}/GenreTree.cpp",
+                "${workspaceFolder}/Library.cpp",
+                "-o",
+                "${workspaceFolder}/library_system.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+} 
